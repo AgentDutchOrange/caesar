@@ -23,18 +23,26 @@ int main(int argc, string argv[1])
         //happy path if key is validated as integer
         if (num_of_ints == n)
         {
+            int key = atoi(argv[1]);
             //get plaintext from user
             string text = get_string("Plain text: ");
             
             for (int i = 0, t = strlen(text); i < t; i++)
-            {   
-                //iterate through each letter of user text, confirm if alphabetical character
+            {
                 if (isalpha(text[i]))
                 {
-                    text[i]+= 1;
+                    text[i] += 1;
+                    printf("%c", text[i]);
+                    //for (int j = 0; j < key; j++)
+                    {
+                        //if (text[i] < 122)
+                        {
+                            //++text[i];
+                        }
+                    }
                 }
             }
-            printf("%s\n", text);
+            
         }
         
         else
